@@ -1,2 +1,1 @@
-# frontend
-Created with CodeSandbox
+# equipo2_cv_ppi2020
