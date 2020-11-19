@@ -1,24 +1,23 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import PagInicio from "./PagInicio";
+import Login from "./Componentes/Login";
+import Registro from "./Componentes/Registro";
+import Acerca from "./Componentes/Acerca";
+import Inicio from "./Componentes/Inicio";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Campo Valdés MT - 2020..</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={PagInicio} />
+        <Route exact path="/iniciosesion" component={Login} />
+        <Route exact path="/registro" component={Registro} />
+        <Route exact path="/acercade" component={Acerca} />
+        <Route exact path="/PagInicio" component={PagInicio} />
+        <Route exact path="/Inicio" component={Inicio} />
+      </Switch>
+    </Router>
   );
 }
-
-export default App;

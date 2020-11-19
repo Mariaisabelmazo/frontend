@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url(../src/fondo.png);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(53, 0, 50);
+  font-family: cursive;
 }
 
 .App-link {
@@ -35,4 +35,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.contenedor {
+  align-content: center;
+  margin: 50px;
+  background-image: url(../src/fondo3.png);
+  display: grid;
+}
+.item1 {
+  font-family: serif;
+  background-color: rgb(252, 128, 241);
+  margin: 10px;
+  border-radius: 30px 30px;
+}
+.item2 {
+  font-family: serif;
+  background-color: rgb(236, 247, 80);
+  margin: 10px;
+  border-radius: 30px 30px;
+}
+.item3 {
+  font-family: serif;
+  background-color: rgb(243, 158, 158);
+  margin: 10px;
+  border-radius: 30px 30px;
+}
+.contenedor > div {
+  text-align: center;
+  font-size: 30px;
+  font-family: serif;
 }
